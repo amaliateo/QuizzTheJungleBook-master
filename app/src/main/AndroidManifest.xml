@@ -5,6 +5,7 @@
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,8 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".QuizzActivity" />
-        <activity android:name=".end_Activity" />
-        <activity android:name=".finalPage"></activity>
+        <activity android:name=".end_Activity"/>
+        <activity android:name=".finalPage"/>
     </application>
 
 </manifest>

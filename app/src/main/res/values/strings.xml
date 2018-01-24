@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">Quizz The Jungle Book</string>
+    <string name="app_name">Quiz The Jungle Book</string>
     <string name="disneys">Walt Disney\'s</string>
     <string name="thejunglebook">The Jungle Book</string>
-    <string name="quizz">Quizz</string>
+    <string name="quizz">Quiz</string>
     <string name="entername">What\'s Your Name?</string>
-    <string name="startquizz">Start Quizz</string>
+    <string name="startquizz">Start Quiz</string>
     <string name="didyouknow">Did You Know?</string>
     <string name="questionOne">Who discovered baby Mowgli in the jungle?</string>
     <string name="qOneAnswerOne">the wolves</string>
     <string name="qOneAnswerTwo">Baloo, the bear</string>
     <string name="qOneAnswerThree">Bagheera, the panther</string>
-    <string name="questionTwo">What character sings the \"Trust in me\" song ?</string>
+    <string name="questionTwo">What character sings the \"The Bare Necessities\" song ?</string>
     <string name="questionTwohint">type the answer here</string>
     <string name="questionThree">Who were Mowgli\'s best friends?</string>
     <string name="qThreeAnswerOne">Bagheera</string>
@@ -35,4 +35,5 @@
     <string name="Congratulations">Well done, Amalia!</string>
     <string name="Points">You get 5 points!</string>
     <string name="back">Start Over</string>
+    <string name="trivia">Click for more trivia facts!</string>
 </resources>

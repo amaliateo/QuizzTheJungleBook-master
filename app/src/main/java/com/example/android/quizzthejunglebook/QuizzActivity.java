@@ -1,18 +1,26 @@
 package com.example.android.quizzthejunglebook;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 public class QuizzActivity extends AppCompatActivity {
     int total = 0;
-
+    private MediaPlayer mMediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +45,12 @@ public class QuizzActivity extends AppCompatActivity {
         startActivity(c);
     }
 
+    //play song for forst question
+    public void playMusic(View view) {
+            mMediaPlayer = MediaPlayer.create(this, R.raw.bear);
+            mMediaPlayer.start();
+        }
+
     //add the correct answers
     private int calculatePoints(int total) {
         //checks the answer for question One
@@ -47,7 +61,7 @@ public class QuizzActivity extends AppCompatActivity {
         //checks the answer for question Two
         EditText answerText = (EditText) findViewById(R.id.qTwoVarOne);
         String answer = answerText.getText().toString();
-        if (answer.equals("KAA")) {
+        if (answer.equals("BALOO")) {
             total = total + 1;
         }
         //checks the answer for question Three

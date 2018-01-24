@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class finalPage extends AppCompatActivity {
@@ -27,9 +28,12 @@ public class finalPage extends AppCompatActivity {
         if (firstPage != null) {
             Congrats = firstPage.getString("name");
         }
+
         //show the congratulations message with the player's name
         if (value <= 3) {
             showName("It's okay " + Congrats + ". You should try again! ");
+            changePic();
+
         } else showName("Well done, " + Congrats + "!");
 
 
@@ -47,11 +51,16 @@ public class finalPage extends AppCompatActivity {
         TextView viewresult = (TextView) findViewById(R.id.points_textview);
         viewresult.setText(String.valueOf(mesajtotal));
     }
+    private void changePic (){
+        ImageView monkey = (ImageView)findViewById(R.id.monkey);
+        monkey.setImageResource(R.drawable.rsz_sheerkhan);
+    }
 
     //get the id of the congratulations message
     private void showName(String mesajname) {
 
         TextView viewresult = (TextView) findViewById(R.id.congrats_textview);
         viewresult.setText(String.valueOf(mesajname));
+
     }
 }

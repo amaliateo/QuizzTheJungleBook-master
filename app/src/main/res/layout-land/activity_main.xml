@@ -65,7 +65,8 @@
         android:background="#8BC34A"
         android:text="@string/startquizz"
         android:textAppearance="@style/styleFour"
-        android:textColor="#F4FF81" />
+        android:textColor="#F4FF81"
+        android:onClick="StartQuizz"/>
 
     <Button
         android:id="@+id/didyouknow_button"
@@ -78,6 +79,7 @@
         android:padding="@dimen/smallSpacing"
         android:text="@string/didyouknow"
         android:textAppearance="@style/styleOne"
-        android:textColor="#8BC34A" />
+        android:textColor="#8BC34A"
+        android:onClick="didYouKnow"/>
 
 </RelativeLayout>
