@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class QuizzActivity extends AppCompatActivity {
     int total = 0;
@@ -57,28 +58,32 @@ public class QuizzActivity extends AppCompatActivity {
         RadioButton button1 = (RadioButton) findViewById(R.id.qOneVarOne);
         if (button1.isChecked()) {
             total = total + 1;
-        }
+            }
         //checks the answer for question Two
         EditText answerText = (EditText) findViewById(R.id.qTwoVarOne);
         String answer = answerText.getText().toString();
         if (answer.equals("BALOO")) {
             total = total + 1;
-        }
+            }
+
         //checks the answer for question Three
         CheckBox checkOne = (CheckBox) findViewById(R.id.qThreeVarTwo);
         CheckBox checkTwo = (CheckBox) findViewById(R.id.qThreeVarFour);
         if (checkOne.isChecked() && checkTwo.isChecked()) {
             total = total + 1;
-        }
+            }
+
         //checks the answer for question four
         RadioButton buttonFour = (RadioButton) findViewById(R.id.qFourVarFour);
         if (buttonFour.isChecked()) {
             total = total + 1;
-        }
+            }
+
         RadioButton buttonFive = (RadioButton) findViewById(R.id.qFiveVarThree);
         if (buttonFive.isChecked()) {
             total = total + 1;
         }
+
         return total;
     }
 
