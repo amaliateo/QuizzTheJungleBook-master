@@ -36,4 +36,6 @@
     <string name="Points">You get 5 points!</string>
     <string name="back">Start Over</string>
     <string name="trivia">Click for more trivia facts!</string>
+    <string name="play_song">play song</string>
+    <string name="back_one">Back</string>
 </resources>

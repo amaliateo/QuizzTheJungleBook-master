@@ -55,33 +55,33 @@ public class QuizzActivity extends AppCompatActivity {
     //add the correct answers
     private int calculatePoints(int total) {
         //checks the answer for question One
-        RadioButton button1 = (RadioButton) findViewById(R.id.qOneVarOne);
+        RadioButton button1 = (RadioButton) findViewById(R.id.qOneVarThree);
         if (button1.isChecked()) {
-            total = total + 1;
+            total++;
             }
         //checks the answer for question Two
         EditText answerText = (EditText) findViewById(R.id.qTwoVarOne);
         String answer = answerText.getText().toString();
         if (answer.equals("BALOO")) {
-            total = total + 1;
+            total++;
             }
 
         //checks the answer for question Three
         CheckBox checkOne = (CheckBox) findViewById(R.id.qThreeVarTwo);
         CheckBox checkTwo = (CheckBox) findViewById(R.id.qThreeVarFour);
         if (checkOne.isChecked() && checkTwo.isChecked()) {
-            total = total + 1;
+            total++;
             }
 
         //checks the answer for question four
         RadioButton buttonFour = (RadioButton) findViewById(R.id.qFourVarFour);
         if (buttonFour.isChecked()) {
-            total = total + 1;
+            total++;
             }
 
         RadioButton buttonFive = (RadioButton) findViewById(R.id.qFiveVarThree);
         if (buttonFive.isChecked()) {
-            total = total + 1;
+            total++;
         }
 
         return total;

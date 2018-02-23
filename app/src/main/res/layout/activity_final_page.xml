@@ -34,12 +34,14 @@
                 android:layout_gravity="center"
                 android:text="@string/Congratulations"
                 android:textAppearance="@style/styleTwo" />
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/rsz_monkey"
-    android:id="@+id/monkey"
-    android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/monkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/rsz_monkey" />
+
             <TextView
                 android:id="@+id/points_textview"
                 android:layout_width="wrap_content"
