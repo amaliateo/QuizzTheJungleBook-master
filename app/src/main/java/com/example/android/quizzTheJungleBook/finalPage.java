@@ -1,4 +1,4 @@
-package com.example.android.quizzthejunglebook;
+package com.example.android.quizzTheJungleBook;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -41,7 +41,7 @@ public class finalPage extends AppCompatActivity {
 
     //go to the main layout
     public void goback(View view) {
-        Intent d = new Intent(this, com.example.android.quizzthejunglebook.MainActivity.class);
+        Intent d = new Intent(this, com.example.android.quizzTheJungleBook.MainActivity.class);
         startActivity(d);
     }
 

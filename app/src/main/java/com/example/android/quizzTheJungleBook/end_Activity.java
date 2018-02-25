@@ -1,6 +1,5 @@
-package com.example.android.quizzthejunglebook;
+package com.example.android.quizzTheJungleBook;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +22,7 @@ public class end_Activity extends AppCompatActivity {
     }
     //go back to the main layout
     public void backButton(View view){
-        Intent b = new Intent (this, com.example.android.quizzthejunglebook.MainActivity.class);
+        Intent b = new Intent (this, com.example.android.quizzTheJungleBook.MainActivity.class);
         startActivity(b);
     }
 }

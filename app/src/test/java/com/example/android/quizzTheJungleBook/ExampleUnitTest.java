@@ -1,4 +1,4 @@
-package com.example.android.quizzthejunglebook;
+package com.example.android.quizzTheJungleBook;
 
 import org.junit.Test;
 

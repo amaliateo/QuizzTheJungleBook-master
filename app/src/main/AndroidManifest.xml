@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.quizzthejunglebook">
+    package="com.example.android.quizzTheJungleBook">
 
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,16 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.android.quizzTheJungleBook.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuizzActivity" />
-        <activity android:name=".end_Activity"/>
-        <activity android:name=".finalPage"/>
+        <activity android:name="com.example.android.quizzTheJungleBook.QuizzActivity" />
+        <activity android:name="com.example.android.quizzTheJungleBook.end_Activity"/>
+        <activity android:name="com.example.android.quizzTheJungleBook.finalPage"/>
     </application>
 
 </manifest>

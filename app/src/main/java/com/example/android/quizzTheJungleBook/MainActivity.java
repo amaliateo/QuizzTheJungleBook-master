@@ -1,4 +1,4 @@
-package com.example.android.quizzthejunglebook;
+package com.example.android.quizzTheJungleBook;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     //go to the Did You Know activity_end layout
     public void didYouKnow(View view) {
-        Intent a = new Intent(this, com.example.android.quizzthejunglebook.end_Activity.class);
+        Intent a = new Intent(this, com.example.android.quizzTheJungleBook.end_Activity.class);
         startActivity(a);
     }
 

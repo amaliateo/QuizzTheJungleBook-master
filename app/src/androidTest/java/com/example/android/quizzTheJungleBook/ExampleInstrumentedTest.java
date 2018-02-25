@@ -1,4 +1,4 @@
-package com.example.android.quizzthejunglebook;
+package com.example.android.quizzTheJungleBook;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.android.quizzthejunglebook", appContext.getPackageName());
+        assertEquals("com.example.android.quizzTheJungleBook", appContext.getPackageName());
     }
 }

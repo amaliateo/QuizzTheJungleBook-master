@@ -1,25 +1,13 @@
-package com.example.android.quizzthejunglebook;
+package com.example.android.quizzTheJungleBook;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.Toast;
-
-
 
 
 public class QuizzActivity extends AppCompatActivity {
@@ -43,7 +31,7 @@ public class QuizzActivity extends AppCompatActivity {
         //call the method to calculate the correct results
         total = calculatePoints(total);
 
-        Intent c = new Intent(this, com.example.android.quizzthejunglebook.finalPage.class);
+        Intent c = new Intent(this, com.example.android.quizzTheJungleBook.finalPage.class);
         c.putExtra("total", total);
         c.putExtra("name", Congrats);
         startActivity(c);
