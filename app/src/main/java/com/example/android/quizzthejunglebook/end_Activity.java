@@ -23,7 +23,7 @@ public class end_Activity extends AppCompatActivity {
     }
     //go back to the main layout
     public void backButton(View view){
-        Intent b = new Intent (this, MainActivity.class);
+        Intent b = new Intent (this, com.example.android.quizzthejunglebook.MainActivity.class);
         startActivity(b);
     }
 }

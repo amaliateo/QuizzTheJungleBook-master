@@ -19,6 +19,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+
+
+
 public class QuizzActivity extends AppCompatActivity {
     int total = 0;
     private MediaPlayer mMediaPlayer;
@@ -40,7 +43,7 @@ public class QuizzActivity extends AppCompatActivity {
         //call the method to calculate the correct results
         total = calculatePoints(total);
 
-        Intent c = new Intent(this, finalPage.class);
+        Intent c = new Intent(this, com.example.android.quizzthejunglebook.finalPage.class);
         c.putExtra("total", total);
         c.putExtra("name", Congrats);
         startActivity(c);
@@ -55,31 +58,31 @@ public class QuizzActivity extends AppCompatActivity {
     //add the correct answers
     private int calculatePoints(int total) {
         //checks the answer for question One
-        RadioButton button1 = (RadioButton) findViewById(R.id.qOneVarThree);
+        RadioButton button1 = findViewById(R.id.qOneVarThree);
         if (button1.isChecked()) {
             total++;
             }
         //checks the answer for question Two
-        EditText answerText = (EditText) findViewById(R.id.qTwoVarOne);
+        EditText answerText = findViewById(R.id.qTwoVarOne);
         String answer = answerText.getText().toString();
         if (answer.equals("BALOO")) {
             total++;
             }
 
         //checks the answer for question Three
-        CheckBox checkOne = (CheckBox) findViewById(R.id.qThreeVarTwo);
-        CheckBox checkTwo = (CheckBox) findViewById(R.id.qThreeVarFour);
+        CheckBox checkOne = findViewById(R.id.qThreeVarTwo);
+        CheckBox checkTwo = findViewById(R.id.qThreeVarFour);
         if (checkOne.isChecked() && checkTwo.isChecked()) {
             total++;
             }
 
         //checks the answer for question four
-        RadioButton buttonFour = (RadioButton) findViewById(R.id.qFourVarFour);
+        RadioButton buttonFour = findViewById(R.id.qFourVarFour);
         if (buttonFour.isChecked()) {
             total++;
             }
 
-        RadioButton buttonFive = (RadioButton) findViewById(R.id.qFiveVarThree);
+        RadioButton buttonFive = findViewById(R.id.qFiveVarThree);
         if (buttonFive.isChecked()) {
             total++;
         }

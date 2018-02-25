@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -35,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
     //go to the Did You Know activity_end layout
     public void didYouKnow(View view) {
-        Intent a = new Intent(this, end_Activity.class);
+        Intent a = new Intent(this, com.example.android.quizzthejunglebook.end_Activity.class);
         startActivity(a);
     }
 
     //get the player's name
     private String getName() {
-        EditText whatisthename = (EditText) findViewById(R.id.whatname_editte);
-        String name = whatisthename.getText().toString();
+        EditText whatisthename = findViewById(R.id.whatname_editte);
+        String name = whatisthename.getText().toString().trim();
 
         return name;
 

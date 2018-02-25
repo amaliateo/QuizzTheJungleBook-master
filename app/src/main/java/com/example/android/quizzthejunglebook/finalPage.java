@@ -41,25 +41,25 @@ public class finalPage extends AppCompatActivity {
 
     //go to the main layout
     public void goback(View view) {
-        Intent d = new Intent(this, MainActivity.class);
+        Intent d = new Intent(this, com.example.android.quizzthejunglebook.MainActivity.class);
         startActivity(d);
     }
 
     //get the id of the total points message
     private void showResult(String mesajtotal) {
 
-        TextView viewresult = (TextView) findViewById(R.id.points_textview);
+        TextView viewresult = findViewById(R.id.points_textview);
         viewresult.setText(String.valueOf(mesajtotal));
     }
     private void changePic (){
-        ImageView monkey = (ImageView)findViewById(R.id.monkey);
+        ImageView monkey = findViewById(R.id.monkey);
         monkey.setImageResource(R.drawable.rsz_sheerkhan);
     }
 
     //get the id of the congratulations message
     private void showName(String mesajname) {
 
-        TextView viewresult = (TextView) findViewById(R.id.congrats_textview);
+        TextView viewresult = findViewById(R.id.congrats_textview);
         viewresult.setText(String.valueOf(mesajname));
 
     }
