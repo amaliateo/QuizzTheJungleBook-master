@@ -30,7 +30,8 @@ public class QuizzActivity extends AppCompatActivity {
         }
         //call the method to calculate the correct results
         total = calculatePoints(total);
-
+        //show a simple toast with the result
+        Toast.makeText(this, "You earned "+total+ " points", Toast.LENGTH_LONG).show();
         Intent c = new Intent(this, com.example.android.quizzTheJungleBook.finalPage.class);
         c.putExtra("total", total);
         c.putExtra("name", Congrats);
@@ -60,7 +61,9 @@ public class QuizzActivity extends AppCompatActivity {
         //checks the answer for question Three
         CheckBox checkOne = findViewById(R.id.qThreeVarTwo);
         CheckBox checkTwo = findViewById(R.id.qThreeVarFour);
-        if (checkOne.isChecked() && checkTwo.isChecked()) {
+        CheckBox checkThree = (CheckBox) findViewById(R.id.qThreeVarOne);
+        CheckBox checkFour = (CheckBox) findViewById(R.id.qThreeVarThree);
+        if (checkOne.isChecked() && checkTwo.isChecked() &&!checkThree.isChecked() &&!checkFour.isChecked() ) {
             total++;
             }
 
